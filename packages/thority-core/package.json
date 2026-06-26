@@ -1,0 +1,22 @@
+{
+  "name": "@smartergpt/thority-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Core LexThority effect classification, decisions, and receipts.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean && rm -rf dist"
+  },
+  "dependencies": {
+    "@smartergpt/thority-contracts": "0.1.0"
+  }
+}

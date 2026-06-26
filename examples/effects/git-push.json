@@ -1,0 +1,24 @@
+{
+  "id": "eff_example_git_push",
+  "effect": "repo.push",
+  "dataClass": "source",
+  "target": {
+    "provider": "git",
+    "repository": "Guff/smartergpt-dev",
+    "resource": "branch:feature/test"
+  },
+  "reason": "Pushing mutates remote repository state",
+  "reversibility": "medium",
+  "requiresCredential": true,
+  "credentialKind": "git-remote",
+  "credentialContext": {
+    "source": "ambient",
+    "kind": "git-remote"
+  },
+  "command": [
+    "git",
+    "push",
+    "origin",
+    "feature/test"
+  ]
+}

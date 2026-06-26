@@ -1,0 +1,24 @@
+{
+  "name": "lexthority",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Authority seam for agent work: envelopes, effect decisions, and receipts.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean && rm -rf packages/*/dist",
+    "test": "npm run build && node --test packages/*/test/*.test.mjs",
+    "check": "npm run build && npm test",
+    "cli": "node packages/lex-thority-cli/dist/index.js"
+  },
+  "engines": {
+    "node": ">=20 <25"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "local-engineer",
+  "version": 1,
+  "sonaId": "engineer",
+  "issuedBy": "operator",
+  "issuerRef": "local:guff",
+  "issuedAt": "2026-06-26T08:00:00.000Z",
+  "environment": "local",
+  "scope": {
+    "repositories": [
+      "Guff/smartergpt-dev"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "allow": [
+    "workspace.read",
+    "workspace.write",
+    "repo.branch",
+    "repo.commit",
+    "ci.read"
+  ],
+  "escalate": [
+    "repo.push",
+    "repo.pr.create",
+    "issue.comment",
+    "issue.create",
+    "ci.run",
+    "cloud.read",
+    "cloud.plan"
+  ],
+  "deny": [
+    "cloud.apply",
+    "cloudflare.worker.deploy",
+    "secret.read",
+    "prod.read",
+    "prod.write",
+    "spend",
+    "unknown"
+  ],
+  "dataAllow": [
+    "public",
+    "source",
+    "work-internal",
+    "nonprod-log"
+  ],
+  "dataEscalate": [
+    "unknown"
+  ],
+  "dataDeny": [
+    "secret",
+    "customer-data",
+    "regulated-data",
+    "prod-data"
+  ],
+  "ambientCredentialPolicy": "warn",
+  "unknownEffectPolicy": {
+    "local": "escalate",
+    "ci": "deny",
+    "protected": "deny",
+    "prod": "deny"
+  },
+  "receiptPolicy": {
+    "recordAllowed": true,
+    "recordDenied": true,
+    "recordFallback": true,
+    "requireReason": true
+  }
+}

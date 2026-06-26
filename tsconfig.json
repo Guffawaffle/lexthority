@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/thority-contracts"
+    },
+    {
+      "path": "./packages/thority-core"
+    },
+    {
+      "path": "./packages/lex-thority-cli"
+    }
+  ]
+}
