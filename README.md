@@ -37,3 +37,7 @@ Receipts are written to `.lexthority/receipts.ndjson` by default.
 ## Anti-Drift
 
 If LexThority starts scheduling agents, managing swarms, owning credentials, or modeling every SOP, it is drifting.
+
+## License
+
+LexThority is source-available under the SmarterGPT Personal Use License in [LICENSE](./LICENSE). It is not open source. Commercial, organizational, production, hosted-service, redistribution, and embedding use require a separate written license.

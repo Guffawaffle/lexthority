@@ -4,6 +4,7 @@
   "private": true,
   "description": "Authority seam for agent work: envelopes, effect decisions, and receipts.",
   "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
   "workspaces": [
     "packages/*"
   ],
