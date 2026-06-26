@@ -4,7 +4,7 @@
   "private": true,
   "description": "Dogfood CLI for LexThority effect checks and wrapped execution.",
   "type": "module",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "SEE LICENSE IN ../../LICENSE.md",
   "bin": {
     "lex-thority": "dist/index.js"
   },

@@ -40,4 +40,10 @@ If LexThority starts scheduling agents, managing swarms, owning credentials, or 
 
 ## License
 
-LexThority is source-available under the SmarterGPT Personal Use License in [LICENSE](./LICENSE). It is not open source. Commercial, organizational, production, hosted-service, redistribution, and embedding use require a separate written license.
+This repository is **source-available**, not open source.
+
+You may view, fork, modify, and run this project for personal, non-commercial use under the [SmarterGPT Source-Available Personal Use License](./LICENSE.md).
+
+Commercial use, organizational use, employer/client use, production use, hosted-service use, redistribution, sublicensing, or embedding in another product or platform requires a separate written license from Joseph Guff / Guffawaffle / SmarterGPT.
+
+Public visibility on GitHub does not grant open-source rights or business-use rights.

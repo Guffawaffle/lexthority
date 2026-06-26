@@ -4,7 +4,7 @@
   "private": true,
   "description": "Core LexThority effect classification, decisions, and receipts.",
   "type": "module",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "SEE LICENSE IN ../../LICENSE.md",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
