@@ -1,25 +1,52 @@
 # LexThority
 
-LexThority is the authority seam for agent work. It is not an orchestrator, an IAM broker, or a swarm runtime.
+LexThority is pre-alpha research into consequence boundaries for agent work. It
+is not an orchestrator, sandbox, IAM broker, credential vault, LLM reviewer, or
+swarm runtime.
 
-It provides a small contract:
+The current thesis:
+
+```text
+Containment grants freedom.
+Consequence contracts describe boundaries.
+Evidence proves what was possible or attempted.
+Receipts preserve what happened.
+```
+
+LexThority should be mostly invisible during normal work. It should appear only
+when an agent, tool, or run is about to consume authority outside its bounded
+workspace.
+
+The current proof harness provides a small effect contract:
 
 - `ThorityEnvelope`: what this run may attempt
 - `EffectRequest`: what an agent or adapter is about to do
 - `ThorityDecision`: `allow`, `escalate`, or `deny`
 - `EffectReceipt`: what was decided, what happened, and what the operator needs next
 
+See [docs/consequence-boundary-model.md](./docs/consequence-boundary-model.md)
+for the current research model.
+
+See [docs/operational-contract.md](./docs/operational-contract.md) for the draft
+agent-facing contract and stack boundary. That document reflects the current
+proof harness and is expected to evolve toward consequence-centered envelopes.
+
+Direct section: [What It's Like To Be An Agent In Your Stack](./docs/operational-contract.md#what-its-like-to-be-an-agent-in-your-stack).
+
 ## Stack Boundary
 
 ```text
-LexSona     = posture, duty, default caution, role-like context
-LexThority  = concrete authority envelope + effect decision engine
-AXF         = workspace bearings, capability declarations, effect hints
-Adapters    = wrappers around git/gh/gcloud/cloudflare/orchestrators
-Lex         = receipts, memory, denials, fallbacks, learned access reality
+LexSona      = posture, duty, default caution, role-like context
+LexThority   = consequence-boundary contract and receipts
+AXF          = workspace bearings, capability declarations, consequence hints
+Adapters     = wrappers around git/gh/gcloud/cloudflare/orchestrators
+Containment  = sandbox, filesystem, network, credential, and runtime limits
+Lex          = receipts, memory, denials, fallbacks, learned access reality
 ```
 
-LexThority starts boring on purpose. The first proof is a CLI that can classify and gate an effect like `git push`.
+LexThority starts boring on purpose. The first proof is a CLI that can classify
+and gate an effect like `git push`, but that CLI is a reference implementation
+and test harness, not the intended daily workflow for agents.
 
 ## Quick Start
 
@@ -36,7 +63,9 @@ Receipts are written to `.lexthority/receipts.ndjson` by default.
 
 ## Anti-Drift
 
-If LexThority starts scheduling agents, managing swarms, owning credentials, or modeling every SOP, it is drifting.
+If LexThority starts scheduling agents, managing swarms, owning credentials,
+modeling every SOP, or forcing every local command through paperwork, it is
+drifting.
 
 ## License
 
