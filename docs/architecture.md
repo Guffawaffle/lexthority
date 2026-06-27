@@ -15,6 +15,9 @@ Existing orchestrators and coding agents can become clients or adapters.
 The current concept is documented in
 [consequence-boundary-model.md](./consequence-boundary-model.md).
 
+The fuller draft RFC is maintained at
+[rfcs/effect-based-authority-control.md](./rfcs/effect-based-authority-control.md).
+
 The working agent-facing contract is maintained in
 [operational-contract.md](./operational-contract.md).
 

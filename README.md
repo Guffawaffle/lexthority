@@ -27,6 +27,10 @@ The current proof harness provides a small effect contract:
 See [docs/consequence-boundary-model.md](./docs/consequence-boundary-model.md)
 for the current research model.
 
+See [docs/rfcs/effect-based-authority-control.md](./docs/rfcs/effect-based-authority-control.md)
+for the draft RFC that expands the model into schemas, reducer behavior,
+authority grants, drift findings, and MVP scope.
+
 See [docs/operational-contract.md](./docs/operational-contract.md) for the draft
 agent-facing contract and stack boundary. That document reflects the current
 proof harness and is expected to evolve toward consequence-centered envelopes.

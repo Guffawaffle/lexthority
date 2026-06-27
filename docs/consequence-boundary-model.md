@@ -2,6 +2,8 @@
 
 Status: pre-alpha research
 
+Expanded RFC: [rfcs/effect-based-authority-control.md](./rfcs/effect-based-authority-control.md)
+
 LexThority is not a sandbox, credential broker, IAM provider, or LLM reviewer.
 
 LexThority is the consequence-boundary contract that lets sandboxes, tool
